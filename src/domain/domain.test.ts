@@ -1,0 +1,1 @@
+import{describe,expect,it}from'vitest';import{riskLevel,riskScore}from'./risk';describe('risk scoring',()=>{it('scores and classifies risk',()=>{expect(riskScore(3,4)).toBe(12);expect(riskLevel(12)).toBe('high');expect(riskLevel(20)).toBe('critical')})});

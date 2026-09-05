@@ -1,0 +1,1 @@
+export type RiskStatus='open'|'mitigated'|'closed';export interface TinyRisk{id:string;title:string;probability:number;impact:number;score:number;status:RiskStatus;projectId?:string;ownerPersonId?:string;note?:string;createdAt:string;updatedAt:string}export interface RiskStorage{get<T>(k:string):Promise<T|null>;set<T>(k:string,v:T):Promise<void>}
